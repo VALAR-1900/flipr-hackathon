@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %} 
+
+{% block content %}
+<div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Open</th>
+          <th>Previous Close</th>
+          <th>Day High</th>
+          <th>Day Low</th>
+          <th>52 Week High</th>
+          <th>52 week Low</th>   
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{open.open}}</td>
+          <td>{{dc.close}}</td>
+          <td>{{dh.high}}</td>
+          <td>{{dl.low}}</td>
+          <td>{{high.high}}</td>
+          <td>{{low.low}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
